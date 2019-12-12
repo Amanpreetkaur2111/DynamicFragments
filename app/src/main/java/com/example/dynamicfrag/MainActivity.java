@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         if(findViewById(R.id.fragment_container)!= null){
 
-            if(savedInstanceState!=null){
-                return;
-            }
+//            if(savedInstanceState!=null){
+//                return;
+//            }
 
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             HomeFragment homeFragment = new HomeFragment();
@@ -30,4 +30,6 @@ public class MainActivity extends AppCompatActivity {
             fragmentTransaction.commit();
         }
     }
+
+
 }
